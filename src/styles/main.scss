@@ -1,0 +1,53 @@
+@import 'base';
+@import '~bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css?family=Cantata+One');
+// Some best-practice CSS that's useful for most apps
+// Just remove them if they're not what you want
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Cantata One', serif;
+}
+body {
+  font-size: 14px;
+  font-size: 1.4rem;
+  color  : #525757;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  font-size: 2.0rem;
+}
+
+.col-vertical-center {
+  align-items: center;
+  display: flex;
+}
+
+@include tablet {
+  h1{
+    font-size: 2.2rem;
+  }
+  .col-md-vertical-center {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
+@include desktop {
+  h1{
+    font-size: 3.0rem;
+  }
+}

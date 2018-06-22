@@ -1,0 +1,100 @@
+<html>
+	<head>
+		<title>gauge</title>
+		<script Xsrc="jquery-3.3.1.min.js" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="scripts/GaugeMeter.js"></script>
+        
+        <style>
+		  .GaugeMeter{
+		    Position:        Relative;
+		    Text-Align:      Center;
+		    Overflow:        Hidden;
+		    Cursor:          Default;
+		    margin: 0 auto;
+		  }
+		
+		  .GaugeMeter SPAN,
+		  .GaugeMeter B{
+		    Margin:          0 23%;
+		    Position:        Absolute;
+		    Text-align:      Center;
+		    Display:         Inline-Block;
+		    Color:           RGBa(0,0,0,.8);
+		    Font-Weight:     100;
+		    Font-Family:     "Open Sans", Arial;
+		    Overflow:        Hidden;
+		    White-Space:     NoWrap;
+		    Text-Overflow:   Ellipsis;
+		    width: 54%;
+		  }
+		  
+		  .GaugeMeter SPAN {
+			  font-size: 69px !important;
+		  }
+		 
+		  
+		  .GaugeMeter[data-style="Semi"] B{
+		    Margin:          0 10%;
+		    Width:           80%;
+		  }
+		
+		  .GaugeMeter S,
+		  .GaugeMeter U{
+		    Text-Decoration: None;
+		    Font-Size:       .5em;
+		    Opacity:         .5;
+		  }
+		
+		  .GaugeMeter B{
+		    Color:           Black;
+		    Font-Weight:     300;
+		    Font-Size:       1em;
+		    Opacity:         .8;
+		  }
+		</style>
+		
+		<script>
+		  $(document).ready(function(){
+		    $(".GaugeMeter").gaugeMeter();
+		  });
+		</script>
+		
+		<div class="GaugeMeter" id="GaugeMeter_1"
+		    data-percent=null
+			data-used="1521"
+			data-total="2000"
+			data-text="1,521"
+			data-prepend=null
+			data-append="KW"
+			data-size="420"
+			data-width="24"
+			data-style="Arch"
+			data-color="#a8192e"
+			data-back="#f3f3f1"
+			data-theme="Red-Gold-Green"
+			data-animate_gauge_colors=false
+			data-animate_text_colors=true
+			data-label="Current Energy Performance"
+			data-label_color=null
+			data-stripe=null
+		></div>
+		
+	</head>
+	<body>
+		
+		
+		
+				
+	</body>	
+</html>
+
+
+
+
+
+
+
+
+
+
+

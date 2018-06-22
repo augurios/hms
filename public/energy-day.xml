@@ -1,0 +1,212 @@
+
+<Energy>
+<ISGOOD>YES</ISGOOD>
+<redirectURL>http://hms.harvard.edu/departments/campus-planning-and-facilities/facilities</redirectURL>
+	
+<CurrentEnergy>
+	<endtime>6/21/2018 7:24:01 PM</endtime>
+	<data>
+	<elec units="KW">
+		
+		<value>108.57</value>
+		
+		<redline>240</redline>
+		<max>250</max>	
+			
+	</elec>
+	<cooling units="KW">
+	<value>45.70759</value>
+	
+		<redline>138.3407</redline>
+		<max>164.6255</max>
+		
+	</cooling>
+
+<heating units="KW">
+<value>31.058</value>
+
+<redline>113.649574645996</redline>
+
+<max>527.4</max>
+</heating>
+
+	</data>	
+</CurrentEnergy>
+<HistoricalEnergy>
+	<range>Hourly</range>
+	<starttime>21-Jun-2018 00:00:00</starttime>
+	<endtime>22-Jun-2018 00:00:00</endtime>
+	<data>
+		<elec units="KWH">
+			
+			<value date="6/21/2018">91</value>
+			
+			<value date="6/21/2018 1:00:00 AM">83</value>
+			
+			<value date="6/21/2018 2:00:00 AM">83</value>
+			
+			<value date="6/21/2018 3:00:00 AM">84</value>
+			
+			<value date="6/21/2018 4:00:00 AM">85</value>
+			
+			<value date="6/21/2018 5:00:00 AM">90</value>
+			
+			<value date="6/21/2018 6:00:00 AM">104</value>
+			
+			<value date="6/21/2018 7:00:00 AM">120</value>
+			
+			<value date="6/21/2018 8:00:00 AM">125</value>
+			
+			<value date="6/21/2018 9:00:00 AM">137</value>
+			
+			<value date="6/21/2018 10:00:00 AM">143</value>
+			
+			<value date="6/21/2018 11:00:00 AM">149</value>
+			
+			<value date="6/21/2018 12:00:00 PM">147</value>
+			
+			<value date="6/21/2018 1:00:00 PM">145</value>
+			
+			<value date="6/21/2018 2:00:00 PM">141</value>
+			
+			<value date="6/21/2018 3:00:00 PM">134</value>
+			
+			<value date="6/21/2018 4:00:00 PM">128</value>
+			
+			<value date="6/21/2018 5:00:00 PM">120</value>
+			
+			<value date="6/21/2018 6:00:00 PM">112</value>
+			
+			<value date="6/21/2018 7:00:00 PM">106</value>
+			
+			<value date="6/21/2018 8:00:00 PM">0</value>
+			
+			<value date="6/21/2018 9:00:00 PM">0</value>
+			
+			<value date="6/21/2018 10:00:00 PM">0</value>
+			
+			<value date="6/21/2018 11:00:00 PM">0</value>
+			
+			<value date="6/22/2018">0</value>
+			
+	
+		</elec>
+		<cooling units="KWH">
+		
+			<value date="6/21/2018">37</value>
+			
+			<value date="6/21/2018 1:00:00 AM">33</value>
+			
+			<value date="6/21/2018 2:00:00 AM">38</value>
+			
+			<value date="6/21/2018 3:00:00 AM">48</value>
+			
+			<value date="6/21/2018 4:00:00 AM">34</value>
+			
+			<value date="6/21/2018 5:00:00 AM">43</value>
+			
+			<value date="6/21/2018 6:00:00 AM">56</value>
+			
+			<value date="6/21/2018 7:00:00 AM">63</value>
+			
+			<value date="6/21/2018 8:00:00 AM">90</value>
+			
+			<value date="6/21/2018 9:00:00 AM">95</value>
+			
+			<value date="6/21/2018 10:00:00 AM">117</value>
+			
+			<value date="6/21/2018 11:00:00 AM">115</value>
+			
+			<value date="6/21/2018 12:00:00 PM">115</value>
+			
+			<value date="6/21/2018 1:00:00 PM">107</value>
+			
+			<value date="6/21/2018 2:00:00 PM">104</value>
+			
+			<value date="6/21/2018 3:00:00 PM">100</value>
+			
+			<value date="6/21/2018 4:00:00 PM">91</value>
+			
+			<value date="6/21/2018 5:00:00 PM">89</value>
+			
+			<value date="6/21/2018 6:00:00 PM">84</value>
+			
+			<value date="6/21/2018 7:00:00 PM">52</value>
+			
+			<value date="6/21/2018 8:00:00 PM">0</value>
+			
+			<value date="6/21/2018 9:00:00 PM">0</value>
+			
+			<value date="6/21/2018 10:00:00 PM">0</value>
+			
+			<value date="6/21/2018 11:00:00 PM">0</value>
+			
+			<value date="6/22/2018">0</value>
+			
+		</cooling>
+		<heating units="KWH">
+			
+			<value date="6/21/2018">30.369</value>
+			
+			<value date="6/21/2018 1:00:00 AM">31.273</value>
+			
+			<value date="6/21/2018 2:00:00 AM">30.077</value>
+			
+			<value date="6/21/2018 3:00:00 AM">31.330</value>
+			
+			<value date="6/21/2018 4:00:00 AM">30.185</value>
+			
+			<value date="6/21/2018 5:00:00 AM">31.373</value>
+			
+			<value date="6/21/2018 6:00:00 AM">30.195</value>
+			
+			<value date="6/21/2018 7:00:00 AM">31.506</value>
+			
+			<value date="6/21/2018 8:00:00 AM">30.408</value>
+			
+			<value date="6/21/2018 9:00:00 AM">33.143</value>
+			
+			<value date="6/21/2018 10:00:00 AM">31.671</value>
+			
+			<value date="6/21/2018 11:00:00 AM">30.189</value>
+			
+			<value date="6/21/2018 12:00:00 PM">31.191</value>
+			
+			<value date="6/21/2018 1:00:00 PM">30.060</value>
+			
+			<value date="6/21/2018 2:00:00 PM">31.508</value>
+			
+			<value date="6/21/2018 3:00:00 PM">30.447</value>
+			
+			<value date="6/21/2018 4:00:00 PM">31.062</value>
+			
+			<value date="6/21/2018 5:00:00 PM">31.631</value>
+			
+			<value date="6/21/2018 6:00:00 PM">30.753</value>
+			
+			<value date="6/21/2018 7:00:00 PM">31.985</value>
+			
+			<value date="6/21/2018 8:00:00 PM">0.000</value>
+			
+			<value date="6/21/2018 9:00:00 PM">0.000</value>
+			
+			<value date="6/21/2018 10:00:00 PM">0.000</value>
+			
+			<value date="6/21/2018 11:00:00 PM">0.000</value>
+			
+			<value date="6/22/2018">0.000</value>
+			
+		</heating>
+	</data>
+</HistoricalEnergy>
+<TotalEnergy>
+	<range>Day</range>
+	<data>
+		<elec units="KWH">2,328.8</elec>
+		<cooling units ="KWH">1,512.2</cooling>
+		<heating units = "KWH">620.4</heating>
+		<total units="KWH">189,410.4</total>
+	</data>
+</TotalEnergy>
+</Energy>
+
