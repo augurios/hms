@@ -26,8 +26,8 @@
 			  	 <a class="navbar-brand" href="#"><img src="assets/img/logo-h.png" alt="logo-h"></a>
 		  		 <h1 class="visible-md visible-lg">Total Overall Energy Consumption</h1></div>
 		  		<div class="col-md-3">
-			  		<select class="form-control form-control-lg">
-					  <option>HMS Campus Total Usage</option>
+			  		<select class="form-control form-control-lg" id="buldings">
+					 
 					</select>
 		  		</div>
 		  		 
@@ -51,7 +51,7 @@
   		</div>
   	</div>
   </div>
-  <div class="main">
+  <div class="main loading">
          <div class="container">
 
            <div class="row">
@@ -60,7 +60,6 @@
 					    data-percent=null
 						data-used="129410"
 						data-total="189410"
-						data-text="1,521"
 						data-prepend=null
 						data-append="KW"
 						data-size="420"
@@ -76,11 +75,11 @@
 					></div>
 					<div class='row bottomed text-center'>
 						<div class='col-md-6 col-sm-12'>
-							<h3>70&deg;</h3>
+							<h3><span id="current-temp"></span>&deg;</h3>
 							<p>Current Temp</p>
 						</div>
 						<div class='col-md-6 col-sm-12'>
-						<h3>44%</h3>
+						<h3><span id="current-hum"></span>%</h3>
 							<p>Current Humidity</p>
 						</div>
 					</div>
