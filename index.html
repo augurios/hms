@@ -10,7 +10,10 @@
     <title>HMS Energy</title>
     <link rel="shortcut icon" href="favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/main.min.css">
+    <!-- build:css -->
+    <link rel="stylesheet" type="text/css" href="node_modules/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- endbuild -->
     
 
 
@@ -26,6 +29,12 @@
 			  	 <a class="navbar-brand" href="#"><img src="assets/img/logo-h.png" alt="logo-h"></a>
 		  		 <h1 class="visible-md visible-lg">Total Overall Energy Consumption</h1></div>
 		  		<div class="col-md-3">
+			  		<div class="dot-helper">
+			  			<div class="dot-helper-content">
+			  				<h2>Select Building</h2>
+			  				<p>Click here to change which buildings energy data is displayed on the gauge and graph</p>
+			  			</div>
+			  		</div>
 			  		<select class="form-control form-control-lg" id="buldings">
 					 
 					</select>
@@ -39,13 +48,41 @@
   	<div class="container">
   		<div class="row">
   			<div class="col-md-12">
+	  			
 	  			<ul>
-	  				<li><a href="#" class="type active" data-type="total">Total Usage</a></li>
-	  				<li><a href="#" class="type" data-type="elec">Electricity</a></li>
-	  				<li><a href="#" class="type" data-type="cooling">Cooling</a></li>
-	  				<li><a href="#" class="type" data-type="heating">Heating</a></li>
-	  				<li><a href="#">Current Weather</a></li>
-	  				<li><a href="#" id="reportrange">Historical Usage</a><input type="hidden" id="reportrangeval" name="daterange" value="" /></li>
+	  				<li>
+	  				<div class="dot-helper" style="left: 10%;">
+			  			<div class="dot-helper-content bottom">
+			  				<h2>Utility Icons</h2>
+			  				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus rutrum eleifend. Phasellus dignissim ultricies ligula quis accumsan. Donec neque arcu, rutrum vitae ultricies sit amet, dapibus dictum orci. Curabitur dolor lacus, efficitur sit amet </p>
+			  			</div>
+			  		</div>
+	  				<a href="#" class="type active" data-type="total">Total Usage</a></li>
+	  				<li>
+	  				<div class="dot-helper empty"></div>
+	  				<a href="#" class="type" data-type="elec">Electricity</a></li>
+	  				<li>
+	  				<div class="dot-helper empty"></div>
+	  				<a href="#" class="type" data-type="cooling">Cooling</a></li>
+	  				<li>
+	  				<div class="dot-helper empty"></div>
+	  				<a href="#" class="type" data-type="heating">Heating</a></li>
+	  				<li style="position: relative">
+	  				<div class="dot-helper">
+			  			<div class="dot-helper-content bottom">
+			  				<h2>Current Weather</h2>
+			  				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus rutrum eleifend. Phasellus dignissim ultricies ligula quis accumsan. Donec neque arcu, rutrum vitae ultricies sit amet, dapibus dictum orci. Curabitur dolor lacus, efficitur sit amet </p>
+			  			</div>
+			  		</div>
+	  				<a href="#" class="waeth">Current Weather</a></li>
+	  				<li style="position: relative">
+	  				<div class="dot-helper" style="left: auto;right: 10%;">
+			  			<div class="dot-helper-content bottom">
+			  				<h2>Historical Usage</h2>
+			  				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus rutrum eleifend. Phasellus dignissim ultricies ligula quis accumsan. Donec neque arcu, rutrum vitae ultricies sit amet, dapibus dictum orci. Curabitur dolor lacus, efficitur sit amet </p>
+			  			</div>
+			  		</div>
+	  				<a href="#" id="reportrange">Historical Usage</a><input type="hidden" id="reportrangeval" name="daterange" value="" /></li>
 	  			</ul>
   			</div>
   		</div>
@@ -56,6 +93,14 @@
 
            <div class="row">
 	           	<div class="col-lg-5">
+		           	
+		           	<div class="dot-helper" style="left:50%">
+			  			<div class="dot-helper-content bottom">
+			  				<h2>Current Energy Gauge</h2>
+			  				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus rutrum eleifend. Phasellus dignissim ultricies ligula quis accumsan. Donec neque arcu, rutrum vitae ultricies sit amet, dapibus dictum orci. Curabitur dolor lacus, efficitur sit amet </p>
+			  			</div>
+			  		</div>
+			  		
 		           	<div class="GaugeMeter" id="GaugeMeter_1"
 					    data-percent=null
 						data-used="129410"
@@ -73,51 +118,66 @@
 						data-label_color=null
 						data-stripe=null
 					></div>
+					<div class="dot-helper empty"></div>
 					<div class='row bottomed text-center'>
+						<div class="dot-helper empty"></div>
 						<div class='col-md-6 col-sm-12'>
-							<h3><span id="current-temp"></span>&deg;</h3>
+							<h3><span class="current-temp"></span>&deg;</h3>
 							<p>Current Temp</p>
 						</div>
 						<div class='col-md-6 col-sm-12'>
-						<h3><span id="current-hum"></span>%</h3>
+						<h3><span class="current-hum"></span>%</h3>
 							<p>Current Humidity</p>
 						</div>
 					</div>
 	           	</div>
 	           		<div class="col-lg-7">
+		           		<div class="dot-helper" style="left:50%">
+				  			<div class="dot-helper-content bottom">
+				  				<h2>Historical Usage Graph</h2>
+				  				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus rutrum eleifend. Phasellus dignissim ultricies ligula quis accumsan. Donec neque arcu, rutrum vitae ultricies sit amet, dapibus dictum orci. Curabitur dolor lacus, efficitur sit amet </p>
+				  			</div>
+				  		</div>
 		           		<canvas id="myChart" width="400" height="360"></canvas>
 	           	</div>
            </div>
 		      <div class="row prefoot">
 			    <div class='col-md-12 col-sm-12'>
+				    <div class="dot-helper" style="left:50%">
+			  			<div class="dot-helper-content">
+			  				<h2>Equivalent Unit Icons</h2>
+			  				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus rutrum eleifend. Phasellus dignissim ultricies ligula quis accumsan. Donec neque arcu, rutrum vitae ultricies sit amet, dapibus dictum orci. Curabitur dolor lacus, efficitur sit amet </p>
+			  			</div>
+			  		</div>
 					<h4> equivalent energy Units:</h4>
+					<div class="dot-helper empty"></div>
 			    	<ul class="nav nav-pills">
 					  <li class="nav-item">
-					    <a class="nav-link " href="#">Co2</a>
+					    <a class="nav-link " href="#" data-ratio="1.085">Co2</a>
 					  </li>
 					  <li class="nav-item">
-					    <a class="nav-link active" href="#">KW</a>
+					    <a class="nav-link active" href="#" data-ratio="1">KW</a>
 					  </li>
 					  <li class="nav-item">
-					    <a class="nav-link" href="#">KBTU  </a>
+					    <a class="nav-link" href="#" data-ratio="3.41214">KBTU</a>
 					  </li>
 					  <li class="nav-item">
-					    <a class="nav-link" href="#">               Oil           </a>
+					    <a class="nav-link" href="#" data-ratio="0.0005882352941">Oil</a>
 					  </li>
 					  
 					    <li class="nav-item">
-					    <a class="nav-link" href="#">  Trees  </a>
+					    <a class="nav-link" href="#" data-ratio="0.02260416667">Trees</a>
 					  </li>        
 					  
 					
-					    <li class="nav-item">
-					    <a class="nav-link" href="#">   $    </a>
-					  </li>        
+					<!--    <li class="nav-item">
+					    <a class="nav-link" href="#" data-ratio="0.0296735905">$</a>
+					  </li>    -->    
 			            
 					  
 					  
 					    <li class="nav-item">
-					    <a class="nav-link" href="#"> Cars  </a>
+					    <a class="nav-link" href="#" data-ratio="0.0296735905">Cars</a>
 					  </li>        
 			     
 					</ul>
@@ -126,21 +186,52 @@
          </div>
          
          
-      
-         
+		<div class="weather-view">
+		 <div class="container">
+			 <div class="row">
+			 	<div class="col-md-4">
+				 	<h4>Wind</h4>
+				 	<img src="assets/img/wind-icon.jpg" alt="wind-icon" width="147" height="106">
+				 	<p><strong>Direction:</strong><br />
+					<span class="wind-dir"></span>&deg;</p>
+					<p><strong>Speed:</strong><br />
+					<span class="wind-spid"></span> MPH</p>
+			 	</div>
+			 	<div class="col-md-4">
+				 	<h4>Temp</h4>
+				 	<img src="assets/img/temp-icon.png" alt="temp-icon" width="146" height="97">
+				 	<p><strong><span class="current-temp"></span>&deg; F</strong></p>
+				 	
+				 	<p>
+					<strong>Tomorrow:</strong><br />
+					High: <span class="tomorrowhigh"></span><br />
+					Low: <span class="tomorrowlow"></span>
+					</p>
+					
+			 	</div>
+			 	<div class="col-md-4">
+				 	<h4>Humidity</h4>
+				 	<img src="assets/img/humidity-icon.png" alt="humidity-icon" width="106" height="83">
+				 	<p><strong class="current-hum"></strong>%</p>
+			 	</div>
+			 </div>
+		 </div>
+	</div>     
   </div>    
     <footer>
     	<div class="container">
 	    	<div class="row">
     		<div class="col-md-6"><p>Copyright 2017 Harvard Medical School. All Rights Reserved.</p></div>
     		<div class="col-md-6 text-md-right text-lg-right">
-	    		<a href="#">Facilities Website</a>  |  <a href="#">About This Display</a>
+	    		<a href="#">Facilities Website</a>  |  <a href="#" class="aboutthis">About This Display</a>
     		</div>
     	  </div>
     	</div>
     </footer>
 
-    <script src="assets/js/main.min.js"></script>
+    <!-- build:js -->
+    <script src="assets/js/main.js"></script>
+     <!-- endbuild -->
 
   </body>
 
