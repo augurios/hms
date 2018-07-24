@@ -10,7 +10,10 @@
     <title>HMS Energy</title>
     <link rel="shortcut icon" href="favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/main.min.css">
+    <!-- build:css -->
+    <link rel="stylesheet" type="text/css" href="node_modules/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- endbuild -->
     
 
 
@@ -89,7 +92,7 @@
          <div class="container">
 
            <div class="row">
-	           	<div class="col-lg-5">
+	           	<div class="col-lg-4">
 		           	
 		           	<div class="dot-helper" style="left:50%">
 			  			<div class="dot-helper-content bottom">
@@ -104,7 +107,7 @@
 						data-total="189410"
 						data-prepend=null
 						data-append="KW"
-						data-size="420"
+						data-size="380"
 						data-width="24"
 						data-style="Arch"
 						data-color="#a8192e"
@@ -116,26 +119,32 @@
 						data-stripe=null
 					></div>
 					<div class="dot-helper empty"></div>
-					<div class='row bottomed text-center'>
-						<div class="dot-helper empty"></div>
-						<div class='col-md-6 col-sm-12'>
-							<h3><span class="current-temp"></span>&deg;</h3>
-							<p>Current Temp</p>
-						</div>
-						<div class='col-md-6 col-sm-12'>
-						<h3><span class="current-hum"></span>%</h3>
-							<p>Current Humidity</p>
-						</div>
-					</div>
+					
 	           	</div>
-	           		<div class="col-lg-7">
+	           	<div class="col-lg-6">
 		           		<div class="dot-helper" style="left:50%">
 				  			<div class="dot-helper-content bottom">
 				  				<h2>Historical Usage Graph</h2>
 				  				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus rutrum eleifend. Phasellus dignissim ultricies ligula quis accumsan. Donec neque arcu, rutrum vitae ultricies sit amet, dapibus dictum orci. Curabitur dolor lacus, efficitur sit amet </p>
 				  			</div>
 				  		</div>
-		           		<canvas id="myChart" width="400" height="360"></canvas>
+		           		<canvas id="myChart" width="400" height="340"></canvas>
+	           	</div>
+	           	
+	           	<div class="col-lg-2">
+		           	
+		           	<div class='row bottomed text-center'>
+						<div class="dot-helper empty"></div>
+						<div class='col-md-12'>
+							<h3><span class="current-temp"></span>&deg;</h3>
+							<p>Current Temp</p>
+						</div>
+						<div class='col-md-12'>
+						<h3><span class="current-hum"></span>%</h3>
+							<p>Current Humidity</p>
+						</div>
+					</div>
+		           	
 	           	</div>
            </div>
 		      <div class="row prefoot">
@@ -226,7 +235,9 @@
     	</div>
     </footer>
 
-    <script src="assets/js/main.min.js"></script>
+    <!-- build:js -->
+    <script src="assets/js/main.js"></script>
+     <!-- endbuild -->
 
   </body>
 
