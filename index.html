@@ -8,7 +8,10 @@
     <meta name="author" content="Design by Fletcher Boland / Altolus Digital - www.altolus.com">
     <title>HMS Energy</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/main.min.css">
+    <!-- build:css -->
+    <link rel="stylesheet" type="text/css" href="node_modules/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- endbuild -->
  </head>
 
   <body>
@@ -44,7 +47,7 @@
 	  				<div class="dot-helper" style="left: 10%;">
 			  			<div class="dot-helper-content bottom">
 			  				<h2>Utility Icons</h2>
-			  				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus rutrum eleifend. Phasellus dignissim ultricies ligula quis accumsan. Donec neque arcu, rutrum vitae ultricies sit amet, dapibus dictum orci. Curabitur dolor lacus, efficitur sit amet </p>
+			  				<p>Harvard tracks it's energy consumption by building and by usage type. Energy used for heating and cooling is tracked separate from general energy usage so that we can normalize usage against changing weather patterns.</p>
 			  			</div>
 			  		</div>
 	  				<a href="#" class="type active" data-type="total">Total Usage</a></li>
@@ -61,7 +64,7 @@
 	  				<div class="dot-helper">
 			  			<div class="dot-helper-content bottom">
 			  				<h2>Current Weather</h2>
-			  				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus rutrum eleifend. Phasellus dignissim ultricies ligula quis accumsan. Donec neque arcu, rutrum vitae ultricies sit amet, dapibus dictum orci. Curabitur dolor lacus, efficitur sit amet </p>
+			  				<p>Weather is a major driver of energy, affecting how much energy is consumed to heat or cool the building and maintain a comfortable and stable indoor environment. </p>
 			  			</div>
 			  		</div>
 	  				<a href="#" class="waeth">Current Weather</a></li>
@@ -69,7 +72,7 @@
 	  				<div class="dot-helper" style="left: auto;right: 10%;">
 			  			<div class="dot-helper-content bottom">
 			  				<h2>Historical Usage</h2>
-			  				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus rutrum eleifend. Phasellus dignissim ultricies ligula quis accumsan. Donec neque arcu, rutrum vitae ultricies sit amet, dapibus dictum orci. Curabitur dolor lacus, efficitur sit amet </p>
+			  				<p>By trending energy consumption, Harvard can measure changes in building performance over time. Users can explore this change by checking energy history over past time periods.</p>
 			  			</div>
 			  		</div>
 	  				<a href="#" id="reportrange">Historical Usage</a><input type="hidden" id="reportrangeval" name="daterange" value="" /></li>
@@ -87,7 +90,7 @@
 		           	<div class="dot-helper" style="left:50%">
 			  			<div class="dot-helper-content bottom">
 			  				<h2>Current Energy Gauge</h2>
-			  				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus rutrum eleifend. Phasellus dignissim ultricies ligula quis accumsan. Donec neque arcu, rutrum vitae ultricies sit amet, dapibus dictum orci. Curabitur dolor lacus, efficitur sit amet </p>
+			  				<p>This gauge shows the current energy consumption of the selected building in real time. </p>
 			  			</div>
 			  		</div>
 			  		
@@ -115,7 +118,7 @@
 		           		<div class="dot-helper" style="left:50%">
 				  			<div class="dot-helper-content bottom">
 				  				<h2>Historical Usage Graph</h2>
-				  				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus rutrum eleifend. Phasellus dignissim ultricies ligula quis accumsan. Donec neque arcu, rutrum vitae ultricies sit amet, dapibus dictum orci. Curabitur dolor lacus, efficitur sit amet </p>
+				  				<p>This chart shows the energy usage trend for the selected building and utility over the selected time period.</p>
 				  			</div>
 				  		</div>
 		           		<canvas id="myChart" width="400" height="340"></canvas>
@@ -142,35 +145,35 @@
 				    <div class="dot-helper" style="left:50%">
 			  			<div class="dot-helper-content">
 			  				<h2>Equivalent Unit Icons</h2>
-			  				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus rutrum eleifend. Phasellus dignissim ultricies ligula quis accumsan. Donec neque arcu, rutrum vitae ultricies sit amet, dapibus dictum orci. Curabitur dolor lacus, efficitur sit amet </p>
+			  				<p>By showing the energy consumption as it relates to other energy sources or other carbon emission sources.</p>
 			  			</div>
 			  		</div>
 					<h4> equivalent energy Units:</h4>
 					<div class="dot-helper empty"></div>
 			    	<ul class="nav nav-pills">
 					  <li class="nav-item">
-					    <a class="nav-link " href="#" data-ratio="1.085"><img src="assets/img/co2.svg" alt="logo-h" style="
+					    <a class="nav-link " href="#" data-ratio="1.085" data-desc="Carbon Dioxide is the primary greenhouse gas that responsible for climate change. The chart now shows the energy consumption converted to equivalent pounds of Carbon Dioxide released during energy productions"><img src="assets/img/co2.svg" alt="logo-h" style="
     width:  30px;
     top: 3px;
     left: 28px;
-"> Co2</a>
+" > Co2</a>
 					  </li>
 					  <li class="nav-item">
-					    <a class="nav-link active" href="#" data-ratio="1"><img src="assets/img/kwz.svg" alt="logo-h"style="
+					    <a class="nav-link active" href="#" data-ratio="1" data-desc="Kilowatts-hours is the most typical measure of energy consumption and how the majority of energy utilities is sold. HMS installed KWh meters on each building to measure consumption."><img src="assets/img/kwz.svg" alt="logo-h"style="
     top: 7px;
 "> KW</a>
 					  </li>
 					  <li class="nav-item">
-					    <a class="nav-link" href="#" data-ratio="3.41214"><img src="assets/img/kabutos.svg" alt="logo-h" style="
+					    <a class="nav-link" href="#" data-ratio="3.41214" data-desc="British Thermal Units (BTU) is the basic unit of energy used to compare consumption rates across different energy sources. Typically shown in values of thousands of BTU (kBTU)"><img src="assets/img/kabutos.svg" alt="logo-h" style="
     top: 7px;
 "> KBTU</a>
 					  </li>
 					  <li class="nav-item">
-					    <a class="nav-link" href="#" data-ratio="0.0005882352941"><img src="assets/img/oil.svg" alt="logo-h" style="width: 32px;left: 28px;"> Oil</a>
+					    <a class="nav-link" href="#" data-ratio="0.0005882352941" data-desc="The chart now shows how many equivalent barrels of oil is consumed based on the potential energy content of barrel of crude oil"><img src="assets/img/oil.svg" alt="logo-h" style="width: 32px;left: 28px;"> Oil</a>
 					  </li>
 					  
 					    <li class="nav-item">
-					    <a class="nav-link" href="#" data-ratio="0.02260416667"><img src="assets/img/tree.svg" alt="logo-h" style="width: 32px;top: 1px;"> Trees</a>
+					    <a class="nav-link" href="#" data-ratio="0.02260416667" data-desc="Trees play an important role in global climate regulation. A single tree can absorb 48 pounds of Carbon Dioxide per year, removing it from the atmosphere. The chart shows how many trees would be needed to absorb the Carbon Dioxide emitted."><img src="assets/img/tree.svg" alt="logo-h" style="width: 32px;top: 1px;"> Trees</a>
 					  </li>        
 					  
 					
@@ -181,11 +184,15 @@
 					  
 					  
 					    <li class="nav-item">
-					    <a class="nav-link" href="#" data-ratio="0.0296735905"><img src="assets/img/cars.svg" alt="logo-h"> Cars</a>
+					    <a class="nav-link" href="#" data-ratio="0.0296735905" data-desc="The average car emits about 4.6 metric tons of carbon dioxide per year. The chart shows approximate how many cars would be equal to the carbon dioxide emissions."><img src="assets/img/cars.svg" alt="logo-h"> Cars</a>
 					  </li>        
 			     
 					</ul>
+					
 			     </div>
+			    <div class="col-md-6 offset-md-3">
+				    <p class="unit-desc">Kilowatts-hours is the most typical measure of energy consumption and how the majority of energy utilities is sold. HMS installed KWh meters on each building to measure consumption.</p>
+			    </div>
 			    </div>
          </div>
          
@@ -225,15 +232,17 @@
     <footer>
     	<div class="container">
 	    	<div class="row">
-    		<div class="col-md-6"><p>Copyright <span id="year"></span> Harvard Medical School. All Rights Reserved.</p></div>
-    		<div class="col-md-6 text-md-right text-lg-right">
+    		<div class="col-md-7"><p>&copy; <span id="year"></span> Harvard Medical School. All Rights Reserved. Designed and Developed by <a href="https://www.altolus.com">Altolus Digital</a>.</p></div>
+    		<div class="col-md-5 text-md-right text-lg-right">
 	    		<a href="https://hms.harvard.edu/departments/campus-planning-facilities/facilities">Facilities Website</a>  |  <a href="#" class="aboutthis">About This Display</a>
     		</div>
     	  </div>
     	</div>
     </footer>
 
-    <script src="assets/js/main.min.js"></script>
+    <!-- build:js -->
+    <script src="assets/js/main.js"></script>
+     <!-- endbuild -->
 
   </body>
 
