@@ -57,14 +57,7 @@
 	  				<li>
 	  				<div class="dot-helper empty"></div>
 	  				<a href="#" class="type" data-type="heating">Heating</a></li>
-	  				<li style="position: relative">
-	  				<div class="dot-helper">
-			  			<div class="dot-helper-content bottom">
-			  				<h2>Current Weather</h2>
-			  				<p>Weather is a major driver of energy, affecting how much energy is consumed to heat or cool the building and maintain a comfortable and stable indoor environment. </p>
-			  			</div>
-			  		</div>
-	  				<a href="#" class="waeth">Current Weather</a></li>
+	  				
 	  				<li style="position: relative">
 	  				<div class="dot-helper" style="left: auto;right: 10%;">
 			  			<div class="dot-helper-content bottom">
@@ -81,7 +74,7 @@
   <div class="main loading">
          <div class="container">
 
-           <div class="row">
+           <div class="row switchers">
 	           	<div class="col-lg-4">
 		           	
 		           	<div class="dot-helper" style="left:50%">
@@ -112,13 +105,14 @@
 					
 	           	</div>
 	           	<div class="col-lg-7">
+					   <h3 class="text-center"><span id="start-date"></span> - <span id="end-date"></span></h3>
 		           		<div class="dot-helper" style="left:50%">
 				  			<div class="dot-helper-content bottom">
 				  				<h2>Historical Usage Graph</h2>
 				  				<p>This chart shows the energy usage trend for the selected building and utility over the selected time period.</p>
 				  			</div>
 				  		</div>
-		           		<canvas id="myChart" width="400" height="340"></canvas>
+		           		<canvas id="myChart" width="400" height="300"></canvas>
 	           	</div>
 	           	
 	           	<div class="col-lg-1">
@@ -132,6 +126,15 @@
 						<div class='col-md-12'>
 						<h3><span class="current-hum"></span>%</h3>
 							<p>Current Humidity</p>
+
+							
+									<div class="dot-helper">
+										<div class="dot-helper-content bottom">
+											<h2>Current Weather</h2>
+											<p>Weather is a major driver of energy, affecting how much energy is consumed to heat or cool the building and maintain a comfortable and stable indoor environment. </p>
+										</div>
+									</div>
+									<a href="#" class="waeth">More Current Weather</a>
 						</div>
 					</div>
 		           	
